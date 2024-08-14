@@ -1,0 +1,14 @@
+# JWT Security Configuration
+security:
+  jwt:
+    token:
+      secret-key: my-secret-key  # Ensure this key is kept secure and not hardcoded in production
+
+# Spring Datasource Configuration for PostgreSQL
+spring:
+  datasource:
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/astroles  # Database URL
+    username: astrolesuser  # Database username
+    password: astrolesuserpassword  # Database password (Consider storing it securely)
